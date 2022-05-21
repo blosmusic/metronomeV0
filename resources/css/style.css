@@ -1,0 +1,173 @@
+header, title, h1, h2, h3, h4, h6, h6, body, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h6, h6 {
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+
+.metronome {
+  background-color: #262626;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.bpmDisplay {
+  width: 100%;
+  text-align: center;
+  color: #00ff91;
+}
+
+.bpmDisplay .tempo {
+  font-size: 4em;
+}
+
+.tempoText {
+  font-size: .8em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tempoSettings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tempoSettings .adjustTempoButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #00ff91;
+  border: 1px solid #00ff91;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tempoSettings .adjustTempoButton:hover {
+  background: #00ff91;
+  color: #262626;
+}
+
+.tempoSettings .decreaseBPM {
+  line-height: 25px;
+}
+
+.tempoSettings .increaseBPM {
+  line-height: 25px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 60%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00ff91;
+  cursor: pointer;
+  margin-top: -8px;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00ff91;
+  cursor: pointer;
+  border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  background: #00ff91;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  background: #00ff91;
+}
+
+.startStop {
+  width: 50px;
+  height: 50px;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+  color: #00ff91;
+  border: 1px solid #00ff91;
+  border-radius: 50%;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.startStop:hover {
+  background: #00ff91;
+  color: #262626;
+}
+
+.measures {
+  display: flex;
+  justify-content: center;
+}
+
+.measures .stepper {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #00ff91;
+  border: 1px solid #00ff91;
+  text-align: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.measures .stepper:hover {
+  background: #00ff91;
+  color: #262626;
+}
+
+.measureCount {
+  text-align: center;
+  padding: 0 5px;
+}
+
+.bpmText {
+  text-align: center;
+  font-size: .5em;
+  text-transform: uppercase;
+  color: #f3f3f3;
+  font-weight: bold;
+}
